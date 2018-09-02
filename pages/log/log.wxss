@@ -1,0 +1,15 @@
+/* pages/user-log/user-log.wxss */
+
+.orange {
+  color: #ff7a22 !important;
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+
+.log-item {
+  margin: 10rpx;
+}

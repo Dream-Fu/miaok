@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/log/log",
+    "pages/index/index",
+    "pages/message/message",
+    "pages/usercenter/usercenter",
+    "pages/classCreate/classCreate",
+    "pages/mySrc/mySrc",
+    "pages/myTest/myTest",
+    "pages/userInfo/userInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF7A22",
+    "navigationBarTitleText": "喵赛课",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#919191",
+    "selectedColor": "#FF7A22",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/usercenter/usercenter",
+        "text": "我的"
+      }
+    ]
+  }
+}

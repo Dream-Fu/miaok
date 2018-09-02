@@ -1,0 +1,73 @@
+/**index.wxss**/
+.swiper-tab {
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #777;
+}
+
+.tab-item {
+  width: 33.3%;
+  text-align: center;
+  font-size: 15px;
+  color: #777;
+}
+
+.empty {
+  width: 20%;
+}
+
+.add {
+  width: 13.3%;
+  font-size: 25px;
+  color: #10aeff;
+  text-align: center;
+}
+
+.swiper {
+  height: 1100px;
+  background: #dfdfdf;
+}
+
+.on {
+  color: #ff7a22;
+  border-bottom: 3rpx solid #ff7a22;
+}
+
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-dialog-body {
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10rpx;
+  height: 800rpx;
+  background-color: #fff;
+}
+
+/*动画前初始位置*/
+
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+

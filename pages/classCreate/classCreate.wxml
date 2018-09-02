@@ -1,0 +1,10 @@
+<!--pages/classCreate/classCreate.wxml-->
+<view class='weui-cells__title'style='font-size:22px;color:#000'>课程</view>
+<view class="weui-cell">
+      <textarea class="weui-textarea" placeholder="请输入课程名称" style="height: 3.3em" auto-focus/>
+    </view>
+    <view class='weui-cells__title' style='font-size:22px;color:#000'>班级</view>
+<view class="weui-cell">
+      <textarea class="weui-textarea" placeholder="请输入班级名称" style="height: 3.3em" />
+    </view>
+<button class='weui-btn weui-btn_plain-primary' style='color: #ff7a22;border: 1px solid #ff7a22; width:50%;'>完成</button>

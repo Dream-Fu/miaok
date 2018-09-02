@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class='page'>
+  <view class="swiper-tab">
+    <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">我上的课</view>
+    <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">我教的课</view>
+    <view class='empty'></view>
+    <view class='add' bindtap='actionSheetTap'>+</view>
+  </view>
+  <!-- 弹出底部菜单 -->
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <block wx:for="{{actionSheetItems}}">
+      <action-sheet-item class="item" bindtap="bindItemTap" data-name="{{item}}">{{item}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+  </action-sheet>
+  <!--内容主体-->
+  <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+    <swiper-item>
+      <view style='background-color: green'>我是tab1</view>
+    </swiper-item>
+    <swiper-item>
+      <view>我是tab2</view>
+    </swiper-item>
+  </swiper>
+
+</view>
+
+
+<!-- +触发的上拉菜单 -->
+<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+  <view class="modals-cancel" bindtap="hideModal"></view>
+  <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+
+    <view class='weui-cell'>
+      <view class='weui-cell-bd' style="color: #999;font-size: 14px">加入班级
+      </view>
+      <view class="weui-cell__bd"></view>
+      <view class='weui-cell-ft'>
+        <icon type="cancel" size="23" bindtap="hideModal"></icon>
+      </view>
+    </view>
+
+    <view class="weui-cell">
+      <textarea class="weui-textarea" placeholder="请输入班级邀请码" style="height: 3.3em" auto-focus/>
+    </view>
+    <button class='weui-btn weui-btn_plain-primary' style='color: #ff7a22;border: 1px solid #ff7a22; width:50%'>提交</button>
+  </view>
+</view>
